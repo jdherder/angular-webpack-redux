@@ -1,0 +1,13 @@
+<div class="example-component">
+    <div class="desc-container">
+        <img src="../../../images/angular.png">
+        <h1>{{$ctrl.heading}}</h1>
+        <h2>Redux Edition</h2>
+
+        <p>Current value in state.example.text: {{$ctrl.textFromState}}</p>
+        <div class="input-container">
+            <input ng-model="$ctrl.input" placeholder="Enter value here">
+            <button ng-click="$ctrl.updateState()">Update State</button>
+        </div>
+    </div>
+</div>

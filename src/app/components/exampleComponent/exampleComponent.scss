@@ -1,0 +1,23 @@
+@import '../../../styles/vars';
+@import '../../../styles/mixins';
+
+.example-component {
+  .desc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  .input-container {
+    display: flex;
+
+    input {
+      margin-right: 10px;
+    }
+  }
+}

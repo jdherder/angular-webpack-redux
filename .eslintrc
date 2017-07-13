@@ -1,0 +1,37 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true //sets ES6 globals
+  },
+  "ecmaFeatures": {
+    "modules": true,
+    "experimentalObjectRestSpread": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "extends": "airbnb-base",
+
+  //rule overrides
+  "rules": {
+    //console logs should only warn, not error
+    "no-console": 0,
+
+    //don't enforce a rigid arrow function structure (sacrifices readability)
+    "arrow-body-style": 0,
+
+    //arrow functions with only one param do not need parens
+    "arrow-parens": ["error", "as-needed"],
+
+    //allow 'require' of styles before module imports
+    "import/first": 0,
+
+    //don't force static methods within classes when not utilizing 'this' within them
+    "class-methods-use-this": 0,
+
+    "no-trailing-spaces": 0
+  }
+}
