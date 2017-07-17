@@ -15,9 +15,9 @@
   },
   "extends": "airbnb-base",
 
-  //rule overrides
+  /* rule overrides - add or remove as you see fit for your project */
   "rules": {
-    //console logs should only warn, not error
+    //console logs should not throw blocking error
     "no-console": 0,
 
     //don't enforce a rigid arrow function structure (sacrifices readability)
@@ -30,8 +30,6 @@
     "import/first": 0,
 
     //don't force static methods within classes when not utilizing 'this' within them
-    "class-methods-use-this": 0,
-
-    "no-trailing-spaces": 0
+    "class-methods-use-this": 0
   }
 }
