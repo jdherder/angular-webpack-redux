@@ -77,7 +77,9 @@ if (process.env['NODE_ENV'] === 'production') {
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
-      compress: true,
+      compress: {
+        warnings: false
+      },
       mangle: true
     })
   );
