@@ -10,7 +10,7 @@ const root = function(args) {
 };
 
 //Extraction plugin definitions
-const extractCSS = new ExtractTextPlugin('[name].css');
+const extractCSS = new ExtractTextPlugin('[name].[hash].css');
 
 var options = {
   devtool: 'source-map',
@@ -19,7 +19,7 @@ var options = {
   },
   output: {
     path: root('dist'),
-    filename: '[name].bundle.js',
+    filename: '[name].[hash].bundle.js',
   },
   module: {
     rules: [
