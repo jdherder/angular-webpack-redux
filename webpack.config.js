@@ -12,7 +12,7 @@ const root = function(args) {
 //Extraction plugin definitions
 const extractCSS = new ExtractTextPlugin('[name].[hash].css');
 
-var options = {
+const options = {
   devtool: 'source-map',
   entry: {
     app: './src/app/app.js'
